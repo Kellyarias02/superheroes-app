@@ -1,14 +1,14 @@
 # Superheroes App
 
-Una aplicación React que permite explorar una lista de superhéroes obtenidos desde una API externa. Incluye autenticación de usuarios, paginación para navegar por la lista, y vistas detalladas de cada superhéroe en modales.
+Es una aplicación en React que permite explorar una lista de superhéroes obtenidos desde una API externa. Incluye autenticación de usuarios, paginación para navegar por la lista, y vistas detalladas de cada superhéroe en modales.
 
 ## Características
 
-- **Autenticación**: Sistema de login/logout para acceder a la aplicación.
+- **Autenticación**: Sistema de login/logout. El estado de sesión se mantiene en localStorage, lo que permite que los usuarios permanezcan conectados al recargar la página.
 - **Lista de Superhéroes**: Muestra una cuadrícula de superhéroes con información básica como nombre, género, editorial y poder sobresaliente.
 - **Paginación**: Navegación por páginas para explorar todos los superhéroes disponibles.
 - **Detalles en Modal**: Al hacer clic en un superhéroe, se abre un modal con información detallada incluyendo estadísticas de poder, apariencia, biografía y conexiones.
-- **Interfaz Responsiva**: Diseñada con CSS modules para una experiencia de usuario fluida.
+- **Estilos Consistentes**: La aplicación usa estilos globales para mantener una interfaz coherente en todas las vistas.
 
 ## Tecnologías Utilizadas
 
