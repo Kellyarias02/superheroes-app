@@ -38,7 +38,7 @@ Es una aplicación en React que permite explorar una lista de superhéroes obten
    npm run dev
    ```
 
-4. Abre tu navegador en `http://localhost:5173` (o el puerto que indique Vite).
+4. Abrir el navegador en `http://localhost:5173` (o el puerto que indique Vite).
 
 
 ## API
@@ -51,29 +51,11 @@ La aplicación consume datos de una API externa alojada en AWS API Gateway:
 - Requiere autenticación con Bearer token en el header `Authorization`.
 
 
-## Configuración de ESLint
+## Probar test
+Ejecutar el comando para correr los test.
+```bash
+   npm run test
+   ```
 
-La configuración de ESLint está optimizada para desarrollo de producción con reglas de tipo aware:
 
-- Configura `parserOptions` en `eslint.config.js` para incluir los archivos de configuración de TypeScript.
-- Usa `tseslint.configs.recommendedTypeChecked` o `tseslint.configs.strictTypeChecked` para reglas más estrictas.
-- Opcionalmente, agrega `...tseslint.configs.stylisticTypeChecked` para reglas de estilo.
-
-Para incluir reglas específicas de React, instala `eslint-plugin-react` y actualiza la configuración:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    react,
-  },
-  rules: {
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
 
